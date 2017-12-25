@@ -19,6 +19,6 @@
 * hedgeberg for testing
 * #3dsdev and #cakey for helping out
 
-# A Note
-I was planning to release this last year but never got around to it..
+## A Note
+I was planning to release this last year but never got around to it.. 
 sadly it's pretty useless now.
