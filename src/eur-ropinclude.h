@@ -1,0 +1,44 @@
+#define ROP_POPPC 0x00100070
+#define POP_R1PC 0x0019ff50
+#define POP_R3PC 0x00114f24
+#define POP_R2R6PC 0x001f9728
+#define POP_R4LR_BXR1 0x00153030
+#define POP_R4R8LR_BXR2 0x00149474
+#define POP_R4R5R6PC 0x001001a0
+#define POP_R4FPPC 0x00100b48
+#define POP_R4R8PC 0x001008d8
+
+#define ROP_STR_R1TOR0 0x001005fc
+#define ROP_STR_R0TOR1 0x00111620
+#define ROP_LDR_R0FROMR0 0x00172fbc
+#define ROP_ADDR0_TO_R1 0x0011775c
+
+#define MEMCPY 0x001a1218
+#define MEMSET32_OTHER 0x001a03ac
+
+#define svcControlMemory 0x00172dd0
+#define svcSleepThread 0x001d9638
+
+#define GSPGPU_FlushDataCache 0x001f4b80
+#define GSPGPU_SERVHANDLEADR 0x00222ebc
+
+#define IFile_Read 0x0019e334
+#define IFile_Write 0x00197364
+
+#define ROP_POPR3_ADDSPR3_POPPC 0x00100068
+#define POP_R0PC 0x001004dc
+#define ROP_CMPR0R1_ALT0 0x00126e14
+#define ROP_INITOBJARRAY 0x00196ba8
+#define svcCreateThread 0x001d9614
+#define svcConnectToPort 0x001ec0c4
+#define svcGetProcessId 0x00183134
+#define THROWFATALERR_IPC 0x001ecbc8
+#define SRV_GETSERVICEHANDLE 0x0019564c
+//WARNING: CFGIPC_SecureInfoGetRegion not found.
+#define ROP_COND_THROWFATALERR_ALT0 0x0011579c
+#define GXLOW_CMD4 0x001fa694
+#define GSP_SHAREDMEM_SETUPFRAMEBUF 0x001fa490
+#define FS_MountSdmc 0x00117250
+#define IFile_Open 0x0019e4a4
+#define IFile_Close 0x19e314
+//WARNING: IFile_Seek not found.

@@ -1,0 +1,3 @@
+[submodule "3ds_ropkit"]
+	path = 3ds_ropkit
+	url = https://github.com/yellows8/3ds_ropkit.git

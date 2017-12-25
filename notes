@@ -1,0 +1,19 @@
+Offsets here are USA.
+
+1. 0x001a26d0 : add r0, r0, r4, lsl #3 ; add r0, r7, r0, lsl #4 ; ldr r1, [r0] ; ldr r1, [r1] ; blx r1
+
+a. set up r0 by overflowing it with r4 and r7 (r0 = r4 << 7 + r7)
+b. load r1 from *r0
+c. deref r1
+d. jump to r1
+
+2. 0x00157be4 : add r6, r5, r4, lsl #2 ; ldr r1, [r6, #0x8c] ; ldr r2, [r0] ; ldr r2, [r2, #0xc] ; blx r2
+a. setup r6 by overflowing it with r4 and r5 (r6 = r5 + r4<<2)
+b. load r1 from *(r6 + 0x8c) (this means r6 will be 0x8c less than the address where we want it to be ideally)
+c. load r2 from *r0
+d. load r2 from *(r2+0xc)
+e. jump to r2
+
+pivot: 0x001005e8 : mov sp, r0 ; mov r0, r2 ; mov lr, r3 ; bx r1
+a. sp = r0, checkmate
+b. jump to r1
