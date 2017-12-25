@@ -12,6 +12,7 @@
 
 # thanks
 * smea: for making ninjhax/HBL/all the stuff
+* plutoo for making freakyhax, I based the stage0 stuff off of it
 * yellows8 for 3ds_ropkit, which made this much much easier
 * simon66 for finding the vulnerability in the first place
 * stuckpixel for EUR porting, ideas and putting up with my stupidity
